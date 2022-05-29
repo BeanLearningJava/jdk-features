@@ -1,0 +1,13 @@
+#! /usr/bin/java  --source 11
+
+import java.io.Console;
+
+public class HelloWorld {
+	public static void main(String[] args){
+		System.out.println("Hello World!");
+		Console cons = System.console();
+		String input = cons.readLine("Say something please: ");
+		System.out.println("You said: " + input);
+	}
+}
+
