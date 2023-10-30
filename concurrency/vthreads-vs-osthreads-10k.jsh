@@ -1,3 +1,7 @@
+//usr/bin/env jshell $0 $@; exit $?
+
+/open PRINTING
+
 println("START creating 10k Virtual Threads");
 try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
     IntStream.range(0, 10_000).forEach(i -> {
@@ -23,3 +27,5 @@ try (var executor = Executors.newCachedThreadPool()) {
     });
 }  // executor.close() is called implicitly, and waits
 println("Are we DONE?");
+
+/exit

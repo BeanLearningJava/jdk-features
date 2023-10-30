@@ -1,3 +1,5 @@
+//usr/bin/env jshell $0 $@; exit $?
+
 // https://nurkiewicz.com/2018/09/thread-pool-self-induced-deadlocks.html
 
 System.out.println("First Run is OK");
@@ -42,3 +44,4 @@ e.printStackTrace();
     }
 });
 
+/exit
